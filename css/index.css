@@ -43,6 +43,7 @@ nav {
     background-color: #272727;
     color: #fff;
     border-color: #F2C640;
+    border-radius: 30px 10px 30px 10px;
     
 }
 
@@ -157,6 +158,7 @@ animation-delay:.6s;
 
 .btn-outline-custom:hover {
     border-color: #F2C640;
+    border-radius: 40px 0px 40px 0px;
     background-color: #272727;
 }
 
@@ -185,6 +187,7 @@ animation-delay:.6s;
 
 #sobre h3 {
     letter-spacing: 0.1em;
+    font-size: clamp(1em, 2vw, 2em);
 }
 
 #sobre p {
@@ -195,10 +198,14 @@ animation-delay:.6s;
 }
 
 #sobre button{
+    font-size: clamp(1em, 1vw, 1.2em);
+    padding: 10px;
     letter-spacing: 0.2em;
     font-weight: bold;
     background-color: #272727;
     margin-left: 10px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 24px -10px rgba(255,255,255,0.15); 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 24px -10px rgba(255,255,255,0.15);
     transition: all 0.3s ease-in-out;
 }
 
@@ -218,14 +225,30 @@ animation-delay:.6s;
 }
 
 #sobre img {
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(255,0,0,0.35); 
-    box-shadow: 5px 5px 15px 5px rgba(255,0,0,0.35);
-    border: 2px solid #FF0000;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(242, 198, 48, 0.35); 
+    box-shadow: 5px 5px 15px 5px rgba(242, 198, 48, 0.35);
+    border: 2px inset #FF0000;
     border-radius: 40px 0px 40px 0px;
 }
 
-#port {
-    min-height: 100vh;
+/**! Projetos */
+
+#projetos h3 {
+    letter-spacing: 0.1em;
+    font-size: clamp(1em, 2vw, 2em);
+
+}
+
+.bg-card {
+    background-color: #1b1b1b;
+}
+
+.card {
+    letter-spacing: 0.1em;
+}
+
+.site-pedro span {
+    color: #ff0000;
 }
 
 @media (max-width:1000px) {
@@ -238,4 +261,9 @@ animation-delay:.6s;
     #sobre .foto-perfil {
         display: none;
     }
+}
+
+
+.b {
+    border: 1px solid red;
 }

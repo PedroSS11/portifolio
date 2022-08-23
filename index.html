@@ -10,9 +10,12 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
     <link rel="stylesheet" href="./css/index.css">
 
-    <title>Pedro Henrique</title>
+    <link rel="shortcut icon" href="./assets/favicon/fav2/favicon_io (1)/android-chrome-512x512.png" type="image/x-icon">
+
+    <title>Pedro Henrique Front-end Developer</title>
 </head>
 
 <body>
@@ -32,7 +35,7 @@
             <a class="nav-link" href="#sobre">Quem sou</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Portifólio</a>
+            <a class="nav-link" href="#projetos">Projetos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">Contato</a>
@@ -58,10 +61,10 @@
           <span>R</span>
           <span>O</span>
         </span>
-        <h2 class="text-light">Desenvolvedor Front-end <span class="text-warning">};</span></h2>
+        <h2 class="text-light mt-2">Desenvolvedor Front-end <span class="text-warning">};</span></h2>
         <div class="mt-5 d-flex ">
-          <a href="https://github.com/PedroSS11"><button class="btn btn-outline-custom github"><i class="fa-brands fa-github"></i> GitHub</button></a>
-          <button class="btn btn-outline-custom linkedin"><i class="fa-brands fa-linkedin"></i> Linkedin</button>
+          <a id="git-button" href="#"><button class="btn btn-outline-custom github"><i class="fa-brands fa-github"></i> GitHub</button></a>
+          <a id="linkedin-button" href="#"><button class="btn btn-outline-custom linkedin"><i class="fa-brands fa-linkedin"></i> Linkedin</button></a>
         </div>
         
       </div>
@@ -76,7 +79,7 @@
     <div class="row d-flex flex-column flex-lg-row justify-content-center align-items-center shadow rounded">
 
       <div class="col-8 p-3">
-        <h3 class="borda text-light mb-5 p-1"><span class="text-warning">{</span> Quem sou <span class="text-warning">}</span></h3>
+        <h3 class="borda text-light text-center text-lg-start mb-5 p-2"><span class="text-warning">{</span> Quem sou <span class="text-warning">}</span></h3>
         <p class="text-light">
           Meu nome é <span class="pedro-text">Pedro Henrique</span>. Atualmente sou freelancer como Front-end. Desenvolvo interfaces modernas e de alta qualidade, responsivas e sempre com foco na performance, harmonia e qualidade do resultado final. 
           <p class="mensagem-sobre d-flex flex-column flex-lg-row ">
@@ -90,13 +93,95 @@
         <img class="img-fluid" src="./assets/perfil.jpg" alt="">
       </div>
 
-      <a href="#port"><button>dadsa</button></a>
-
     </div>
   </section>
 
-  <section id="port">
+  <section id="projetos" class="container d-flex text-center align-items-center justify-content-center">
+    <div class="row d-flex justify-content-center align-items-center shadow-lg rounded">
 
+      <div class="col-10 d-flex justify-content-center flex-wrap gap-5">
+
+        <h3 class="borda text-light text-center mb-5 py-3"><span class="text-warning">{</span> Projetos <span class="text-warning">}</span></h3>
+
+        <div class="card bg-card text-light">
+          <img class="card-img-top" src="./assets/portifolio/site1.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Primeiro Portifólio</h4>
+            <p class="card-text">Este foi meu primeiro site pessoal e portifólio que desenvolvi.</p>
+            <a href="https://pedrohenrique-webdev.netlify.app" class="btn btn-outline-custom text-light">Site do Projeto</a>
+            <a href="https://github.com/PedroSS11/Site-Portifolio-Pessoal" class="btn btn-outline-custom text-light">Restitório</a>
+          </div>
+        </div>
+
+        <div class="card bg-card text-light">
+          <img class="card-img-top" src="./assets/portifolio/spotify1.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Spotify Web</h4>
+            <p class="card-text">Interface da Página Principal do Spotify Web.</p>
+            <a href="https://pedross11.github.io/Spotify-Clone-hud" class="btn btn-outline-custom text-light">Site do Projeto</a>
+            <a href="https://github.com/PedroSS11/Spotify-Clone-hud" class="btn btn-outline-custom text-light">Restitório</a>
+          </div>
+        </div>
+
+        <div class="card bg-card text-light">
+          <img class="card-img-top" src="./assets/portifolio/finans1.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Finans</h4>
+            <p class="card-text">Site de ferramenta online para controlar responsabilidades financeiras.</p>
+            <a href="#" class="btn btn-outline-custom text-light disabled">Site do Projeto...Em breve</a>
+            <a href="https://github.com/PedroSS11/Finans-financas-pessoais" class="btn btn-outline-custom text-light">Restitório</a>
+          </div>
+        </div>
+
+        <div class="card bg-card text-light">
+          <img class="card-img-top" src="./assets/portifolio/mosquito.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Mata Mosquito</h4>
+            <p class="card-text">Mata mosquito é um mini game desenvolvido em JavaScript, onde o objeitivo é eliminar todos os mosquitos dentro do tempo determinado.</p>
+            <a href="https://pedross11.github.io/Mata-Mosquito/index.html" class="btn btn-outline-custom text-light">Site do Projeto</a>
+            <a href="https://github.com/PedroSS11/Mata-Mosquito" class="btn btn-outline-custom text-light">Restitório</a>
+          </div>
+        </div>
+
+        <div class="card bg-card text-light">
+          <img class="card-img-top" src="./assets/portifolio/p1.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Pokédex</h4>
+            <p class="card-text">Pokédex é um clássico dos tutoriais de JavaScript, servindo como uma ótima introdução a consumir uma API !</p>
+            <a href="#" class="btn btn-outline-custom text-light">Site do Projeto</a>
+            <a href="#" class="btn btn-outline-custom text-light">Restitório</a>
+          </div>
+        </div>
+
+        <div class="card bg-card text-light">
+          <img class="card-img-top" src="./assets/portifolio/pedrost.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title site-pedro"><span>&lt;</span> Pedro Henrique <span>/&gt;</span></h4>
+            <p class="card-text">Este é meu segundo site portifólio, uma versão melhor desenvolvida do primeiro!</p>
+            <a href="https://pedross11.github.io/pokedex/" class="btn btn-outline-custom text-light">Site do Projeto</a>
+            <a href="https://github.com/PedroSS11/pokedex" class="btn btn-outline-custom text-light">Restitório</a>
+          </div>
+        </div>
+
+        <div class="card bg-card text-light">
+          <img class="card-img-top" src="./assets/soon.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Skyrim Inn</h4>
+            <p class="card-text">Site de Comuninade (wiki) para admiradores do Vendedor de melhor jogo do ano de 2011, Skyrim.</p>
+            <a href="#" class="btn btn-outline-custom text-light disabled ">Em breve</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="container">
+    <div class="row">
+      <div class="">
+
+      </div>
+    </div>
   </section>
  
     
