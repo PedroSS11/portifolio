@@ -1,0 +1,241 @@
+
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+    height: 100vh;
+    font-family: 'Open-sans', sans-serif;
+}
+
+button:active {
+    transform: scale(0.8);
+    outline: none;
+}
+
+.borda {
+    border-bottom: 1px solid red;
+}
+
+/**! NAVBAR */
+
+nav {   
+    background-color: #1b1b1b;
+    border-bottom:2px solid #272727;
+}
+
+.nav-link{
+    font-size: 0.8em;
+    color: #fff;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #272727;
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    background-color: #272727;
+    color: #fff;
+    border-color: #F2C640;
+    
+}
+
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: #fff;
+    border: var(--bs-border-width) solid #ff0000;
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
+/**! LOGO */
+
+.logo {
+    font-size: clamp(1em, 1.5vw, 3.5em);
+}
+
+.logo span{
+    color: #ff0000;
+}
+
+.flip-horizontal-bottom {
+	animation: flip-horizontal-bottom 3s ease-in-out infinite alternate both;
+}
+
+@keyframes flip-horizontal-bottom {
+    0% {
+      transform: rotateX(0);
+    }
+    100% {
+      transform: rotateX(-180deg);
+    }
+}
+  
+
+
+/**! HOME */
+
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: clamp(0.5rem, 1.5vw, 3rem);
+}
+
+.left h2, .left span {
+    font-size: clamp(1em, 6vw, 2.5em);
+}
+/*** ANIMAÇÃO PEDRO */
+.back span {
+    font-size:1em;
+    color:#F2C640;
+    background:transparent;
+    display:table-cell;
+    box-shadow:inset 0 0 5px rgba(0,0,0,0.3), 0 5px 0 #ccc;
+    padding: 0 15px;
+    line-height: 100px;
+    animation:jumb 2s infinite;
+}
+@keyframes jumb {
+0% {
+    transform:translateY(0px)
+}
+50% {
+    transform:translateY(-30px);
+    box-shadow:0 12px 0 #ff0000;
+}
+100% {
+    transform:translateY(0px) 
+}
+}
+.back span:nth-child(1) {
+animation-delay:0s;
+}
+.back span:nth-child(2) {
+animation-delay:.1s;  
+}
+.back span:nth-child(3) {
+animation-delay:.2s;
+}
+.back span:nth-child(4) {
+animation-delay:.3s;  
+}
+.back span:nth-child(5) {
+animation-delay:.4s;
+}
+.back span:nth-child(6) {
+animation-delay:.5s;  
+}
+.back span:nth-child(7) {
+animation-delay:.6s;
+}
+
+#home button {
+    width: 10em;
+    padding: 10px;
+    text-transform: capitalize;
+    letter-spacing: 0.2em;
+    font-size: clamp(1em, 1.5vw, 1.5em);
+    margin-right: 1.2em;
+}
+
+.btn-outline-custom {
+    border: 1px solid #FF0000;
+    border-radius: 0px 40px 0px 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-custom:hover {
+    border-color: #F2C640;
+    background-color: #272727;
+}
+
+.btn.github i, .btn.github {
+    color: #fff;
+}
+
+.btn.linkedin i {
+    color: rgb(64, 107, 224);
+}
+
+.btn.btn.linkedin {
+    color: #fff;
+}
+
+
+/**! SOBRE */
+
+#sobre {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#sobre h3 {
+    letter-spacing: 0.1em;
+}
+
+#sobre p {
+    font-weight: 500;
+    font-size: clamp(0.6em, 1vw, 1.8em);
+    letter-spacing: 0.1em;
+    line-height: 2em;
+}
+
+#sobre button{
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    background-color: #272727;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#sobre button:hover{
+    transform: scale(1.1);
+    background-color: #121212;
+    border-color: #F2C640;
+    border-radius: 0px 40px 0px 40px;
+}
+
+.pedro-text {
+    color: #FF0000;
+}
+
+.mensagem-sobre {
+    color: #F2C640;
+}
+
+#sobre img {
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(255,0,0,0.35); 
+    box-shadow: 5px 5px 15px 5px rgba(255,0,0,0.35);
+    border: 2px solid #FF0000;
+    border-radius: 40px 0px 40px 0px;
+}
+
+#port {
+    min-height: 100vh;
+}
+
+@media (max-width:1000px) {
+    .right {
+        display: none;
+    }
+}
+
+@media (max-width:550px) {
+    #sobre .foto-perfil {
+        display: none;
+    }
+}
