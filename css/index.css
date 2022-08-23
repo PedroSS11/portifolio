@@ -1,4 +1,7 @@
-
+.light {
+    color: #000;
+    background-color: #fff;
+}
 
 html, body {
     scroll-behavior: smooth;

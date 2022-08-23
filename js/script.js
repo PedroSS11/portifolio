@@ -24,5 +24,16 @@ function abreLinkedin() {
 
 // Teste Dark / Light Mode
 
-const body = document.getElementsByTagName('body')
+// const body = document.getElementsByTagName('body')
+// const switchButton = document.getElementById('switch-mode')
 
+
+// switchButton.addEventListener("click", lightMode)
+
+// function darkMode () {
+//     //document.body.classList.remove('.light')
+// }
+
+// function lightMode () {
+//     document.body.classList.add('light')
+// }
