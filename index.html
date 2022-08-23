@@ -38,7 +38,7 @@
             <a class="nav-link" href="#projetos">Projetos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Contato</a>
+            <a class="nav-link" href="#contato">Contato</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -64,8 +64,8 @@
         </span>
         <h2 class="text-light mt-2">Desenvolvedor Front-end <span class="text-warning">};</span></h2>
         <div class="mt-5 d-flex ">
-          <a id="git-button" href="#"><button class="btn btn-outline-custom github"><i class="fa-brands fa-github"></i> GitHub</button></a>
-          <a id="linkedin-button" href="#"><button class="btn btn-outline-custom linkedin"><i class="fa-brands fa-linkedin"></i> Linkedin</button></a>
+          <a id="git-button" href="#"><button class="btn btn-outline-custom github text-center"><i class="fa-brands fa-github"></i> GitHub</button></a>
+          <a id="linkedin-button" href="#"><button class="btn btn-outline-custom linkedin text-center"><i class="fa-brands fa-linkedin"></i> Linkedin</button></a>
         </div>
         
       </div>
@@ -83,10 +83,19 @@
         <h3 class="borda text-light text-center text-lg-start mb-5 p-2"><span class="text-warning">{</span> Quem sou <span class="text-warning">}</span></h3>
         <p class="text-light">
           Meu nome é <span class="pedro-text">Pedro Henrique</span>. Atualmente sou freelancer como Front-end. Desenvolvo interfaces modernas e de alta qualidade, responsivas e sempre com foco na performance, harmonia e qualidade do resultado final. 
-          <p class="mensagem-sobre d-flex flex-column flex-lg-row ">
-            Está precisando de um Dev Front-end ? Vamos Trabalhar Juntos ! 
-            <button class="btn btn-outline-danger text-light mt-5 mt-lg-0">Download CV</button>
+          <p class="icons text-center mt-5 mb-5">
+            <span><i class="fa-brands fa-html5"></i></span>
+            <span><i class="fa-brands fa-css3-alt"></i></span>
+            <span><i class="fa-brands fa-square-js"></i></span>
+            <span><i class="fa-brands fa-bootstrap"></i></span>
+            <span><i class="fa-brands fa-git-alt"></i></span>
+            <span><i class="fa-brands fa-react"></i></span>
           </p>
+          <p class="mensagem-sobre text-center d-flex flex-column justify-content-center">
+            Está precisando de um Dev Front-end ? Vamos Trabalhar Juntos ! 
+            <button class="btn btn-outline-danger btn-cv m-auto mt-3">Download CV</button>
+          </p>
+          
         </p>
       </div>
 
@@ -149,8 +158,8 @@
           <div class="card-body">
             <h4 class="card-title">Pokédex</h4>
             <p class="card-text">Pokédex é um clássico dos tutoriais de JavaScript, servindo como uma ótima introdução a consumir uma API !</p>
-            <a href="#" class="btn btn-outline-custom text-light">Site do Projeto</a>
-            <a href="#" class="btn btn-outline-custom text-light">Repositório</a>
+            <a href="https://pedross11.github.io/pokedex/" class="btn btn-outline-custom text-light">Site do Projeto</a>
+            <a href="https://github.com/PedroSS11/pokedex" class="btn btn-outline-custom text-light">Repositório</a>
           </div>
         </div>
 
@@ -159,8 +168,8 @@
           <div class="card-body">
             <h4 class="card-title site-pedro"><span>&lt;</span> Pedro Henrique <span>/&gt;</span></h4>
             <p class="card-text">Este é meu segundo site portifólio, uma versão melhor desenvolvida do primeiro!</p>
-            <a href="https://pedross11.github.io/pokedex/" class="btn btn-outline-custom text-light">Site do Projeto</a>
-            <a href="https://github.com/PedroSS11/pokedex" class="btn btn-outline-custom text-light">Repositório</a>
+            <a href="#" class="btn btn-outline-custom text-light">Site do Projeto</a>
+            <a href="#" class="btn btn-outline-custom text-light">Repositório</a>
           </div>
         </div>
 
@@ -177,11 +186,43 @@
     </div>
   </section>
 
-  <section id="contato" class="container">
+  <section id="contato" class="container d-flex justify-content-center align-items-center">
 
-    <div class="row">
-      <div class="">
+    <div class="row shadow-lg rounded p-5">
+      <div class="col-12">
+        <div class="row d-flex flex-column flex-lg-row">
 
+          <div class="fomrulario col-12 col-lg-6 mb-5 mb-lg-0 shadow">
+            <h3 class="text-center"><span>&lt;</span> Envie sua Mensagem <span>/&gt;</span></h3>
+            <form action="https://formsubmit.co/contatophss11@gmail.com" method="POST" class="form text-center mb-4">
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name" placeholder="Digite seu nome 🧐" required />
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="Digite seu E-mail 📧" required />
+              <label for="message">Mensagem</label>
+              <textarea name="message" id="message" placeholder="Digite sua Mensagem 😁 " required></textarea>
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="####" />
+              <button type="submit" class="btn btn-outline-custom text-light mt-3 submit">Enviar</button>
+            </form>
+          </div>
+  
+          <div class="col-12 col-lg-6 text-center shadow">
+            <h3>Contato</h3>
+            <p>
+              <button class="btn btn-lg contato"><a href="">Linkedin</a></button>
+            </p>
+            <p>
+              <button class="btn btn-lg contato"><a href="">GitHub</a></button>
+            </p>
+            <p>
+              <button class="btn btn-lg contato"><a href="">Email</a></button>
+            </p>
+            <p>
+              <button class="btn btn-lg contato"><a href="">WhatsApp</a></button>
+            </p>
+          </div>
+        </div>    
       </div>
     </div>
 

@@ -31,7 +31,7 @@ function abreLinkedin() {
 // switchButton.addEventListener("click", lightMode)
 
 // function darkMode () {
-//     //document.body.classList.remove('.light')
+    //document.body.classList.remove('.light')
 // }
 
 // function lightMode () {

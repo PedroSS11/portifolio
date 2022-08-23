@@ -13,7 +13,11 @@ body {
     font-family: 'Open-sans', sans-serif;
 }
 
-button:active {
+body button {
+    transition: all 0.3s ease-in-out;
+}
+
+body button:active {
     transform: scale(0.8);
     outline: none;
 }
@@ -153,6 +157,9 @@ animation-delay:.6s;
     margin-right: 1.2em;
 }
 
+#home i {
+    animation: none;
+}
 .btn-outline-custom {
     border: 1px solid #FF0000;
     border-radius: 0px 40px 0px 40px;
@@ -201,11 +208,13 @@ animation-delay:.6s;
 }
 
 #sobre button{
+    max-width: 15em;
     font-size: clamp(1em, 1vw, 1.2em);
     padding: 10px;
     letter-spacing: 0.2em;
     font-weight: bold;
-    background-color: #272727;
+    background-color: rgb(192, 176, 176);
+    color: #992d2d;
     margin-left: 10px;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 24px -10px rgba(255,255,255,0.15); 
     box-shadow: 0px 10px 13px -7px #000000, 0px 0px 24px -10px rgba(255,255,255,0.15);
@@ -214,10 +223,13 @@ animation-delay:.6s;
 
 #sobre button:hover{
     transform: scale(1.1);
+    color: #fff;
     background-color: #121212;
     border-color: #F2C640;
     border-radius: 0px 40px 0px 40px;
 }
+
+
 
 .pedro-text {
     color: #FF0000;
@@ -225,14 +237,78 @@ animation-delay:.6s;
 
 .mensagem-sobre {
     color: #F2C640;
+    text-transform: uppercase;
 }
 
 #sobre img {
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(242, 198, 48, 0.35); 
-    box-shadow: 5px 5px 15px 5px rgba(242, 198, 48, 0.35);
-    border: 2px inset #FF0000;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(255, 255, 255, 0.35); 
+    box-shadow: 2px 2px 10px 2px rgba(255, 255, 255, 0.35);
     border-radius: 40px 0px 40px 0px;
 }
+
+/** ANIMAÇÃO ICONES */
+
+.fa-brands   {
+    margin-right: 1em;
+    font-size: clamp(1.5em, 2vw, 2.5em);
+    -webkit-box-shadow: 0px 9px 14px -5px rgba(202,202,202,0.07); 
+    box-shadow: 0px 9px 14px -5px rgba(202,202,202,0.07);
+    animation: float 2s ease-in-out infinite;
+    background-color: #121212;
+    border-radius: 100px;
+    
+}
+
+
+
+.fa-html5 {
+    color: #992d2d;
+    animation-delay: 0s;
+}
+
+.fa-css3-alt {
+    color: #6377dd;
+    animation-delay: 1s;
+}
+
+.fa-square-js {
+    color: #fac400;
+    animation-delay: 2s;
+}
+
+.fa-bootstrap {
+    color: #4a1090;
+    animation-delay: 3s;
+}
+
+.fa-git-alt {
+    color: #ff0000;
+    animation-delay: 4s;
+}
+
+.fa-react {
+    color: #1977c8;
+    animation-delay: 5s;
+}
+
+
+
+
+@keyframes float {
+    0% {
+      transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+}
+
 
 /**! Projetos */
 
@@ -250,10 +326,97 @@ animation-delay:.6s;
     letter-spacing: 0.1em;
 }
 
+.card h4 {
+    font-size: clamp(1em, 2vw, 2em);
+    color: #bb4848;
+}
+
+.card p {
+    font-size: clamp(0.5em, 2vw, 1em);
+}
+
+.card a {
+    font-size: clamp(0.5em, 2vw, 1em);
+    border-radius: 15px;
+    border-color: #F2C640;
+}
+
+
 .site-pedro span {
     color: #ff0000;
 }
 
+/**! CONTATO */
+
+#contato {
+    height: 100vh;
+}
+
+
+
+#contato label {
+    color: #fff;
+    letter-spacing: 0.1em;
+}
+
+#contato input {
+    margin-bottom: 1em;
+}
+
+#contato h3 {
+    color: #fff;
+    letter-spacing: 0.1em;
+    font-size: clamp(1em, 2vw, 2em);
+}
+
+#contato h3 span{
+    color: #F2C640;
+}
+
+#contato .form label, 
+.form input, 
+.form textarea, 
+.form button {
+    display: inline-block;
+    width: 50%;
+}
+
+#contato input, textarea {
+    border:2px solid #ff0000;
+    border-radius: 8px;
+    padding: 5px;
+    color: #000;
+    font-weight: bold;
+}
+
+
+#contato button.submit {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease-in-out;
+}
+
+#contato button.submit:hover{
+    border-color: #F2C640;
+}
+
+.contato {
+    width: 10em;
+    padding: 10px;
+    text-transform: capitalize;
+    letter-spacing: 0.2em;
+    font-size: clamp(1em, 1.5vw, 1.5em);
+    margin-right: 1.2em;
+}
+
+.contato a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ff0000;
+
+}
+
+/**!! MEDIA QUERIES */
 @media (max-width:1000px) {
     .right {
         display: none;
