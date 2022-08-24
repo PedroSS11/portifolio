@@ -21,6 +21,24 @@ function abreLinkedin() {
 }
 
 
+// Função para abrir WhatsApp em Aba Separada
+const abaWhatsapp = document.getElementById('link-sobre')
+
+abaWhatsapp.addEventListener("click", abreWhats)
+
+function abreWhats() {
+    window.open("https://web.whatsapp.com/send?phone=5511950724702")
+}
+
+
+/**
+ --------------------------------------
+
+
+ SEÇÃO AINDA EM TESTE E EM FASE DE PRODUÇÃO !!
+
+----------------------------------------------
+
 
 // Teste Dark / Light Mode
 
@@ -37,3 +55,21 @@ function abreLinkedin() {
 // function lightMode () {
 //     document.body.classList.add('light')
 // }
+
+
+// Criando seção nova para contato
+
+// const contatoButton = document.getElementById('face')
+// const textoContato = document.getElementById('texto-contato')
+
+// contatoButton.addEventListener("mouseover", mostraContato)
+// contatoButton.addEventListener("mouseout", tiraContato)
+// function mostraContato() {
+//     document.getElementById('texto-contato').innerText = 'Teste'
+// }
+
+// function tiraContato() {
+//     document.getElementById('texto-contato').innerText = '/* Passe o mouse no contato de sua preferência 
+// }
+
+*/

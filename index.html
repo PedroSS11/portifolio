@@ -28,23 +28,23 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+          <li class="nav-item mt-3 mt-lg-0">
             <a class="nav-link" aria-current="page" href="#home">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mt-3 mt-lg-0"">
             <a class="nav-link" href="#sobre">Quem sou</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mt-3 mt-lg-0"">
             <a class="nav-link" href="#projetos">Projetos</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contato">Contato</a>
+          <li class="nav-item mt-3 mt-lg-0"">
+            <a class="nav-link" href="#contato">Midias Sociais</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
+        <!-- <form class="d-flex" role="search">
           <button id="switch-mode" class="btn btn-outline-danger mx-5">Dark Mode</button>
-          <button class="btn btn-outline-danger text-light" type="submit">Download CV</button>
-        </form>
+          <button class="btn btn-outline-danger btn-cv">Download CV</button>
+        </form> -->
       </div>
     </div>
   </nav>
@@ -91,9 +91,9 @@
             <span><i class="fa-brands fa-git-alt"></i></span>
             <span><i class="fa-brands fa-react"></i></span>
           </p>
-          <p class="mensagem-sobre text-center d-flex flex-column justify-content-center">
-            Está precisando de um Dev Front-end ? Vamos Trabalhar Juntos ! 
-            <button class="btn btn-outline-danger btn-cv m-auto mt-3">Download CV</button>
+          <p id="link-sobre" class=" text-center d-flex flex-column justify-content-center"><a href="#">Está precisando de um Dev Front-end ? Vamos Trabalhar Juntos <i class="fa-solid fa-arrow-pointer"></i> </a>
+            
+            <!-- <button class="btn btn-outline-danger btn-cv m-auto mt-3">Download CV</button> -->
           </p>
           
         </p>
@@ -168,8 +168,8 @@
           <div class="card-body">
             <h4 class="card-title site-pedro"><span>&lt;</span> Pedro Henrique <span>/&gt;</span></h4>
             <p class="card-text">Este é meu segundo site portifólio, uma versão melhor desenvolvida do primeiro!</p>
-            <a href="#" class="btn btn-outline-custom text-light">Site do Projeto</a>
-            <a href="#" class="btn btn-outline-custom text-light">Repositório</a>
+            <a href="https://pedross11.github.io/portifolio/" class="btn btn-outline-custom text-light">Site do Projeto</a>
+            <a href="https://github.com/PedroSS11/portifolio" class="btn btn-outline-custom text-light">Repositório</a>
           </div>
         </div>
 
@@ -186,48 +186,35 @@
     </div>
   </section>
 
-  <section id="contato" class="container d-flex justify-content-center align-items-center">
+  <section id="contato" class="container d-flex justify-content-center align-items-center text-center">
 
-    <div class="row shadow-lg rounded p-5">
-      <div class="col-12">
-        <div class="row d-flex flex-column flex-lg-row">
+    <div class="row shadow-lg rounded p-5 ">
+      
+      <div class="col-12 p-3 ">
+        <h3><span>&lt;</span> Midias Sociais <span>/&gt;</span></h3>
 
-          <div class="fomrulario col-12 col-lg-6 mb-5 mb-lg-0 shadow">
-            <h3 class="text-center"><span>&lt;</span> Envie sua Mensagem <span>/&gt;</span></h3>
-            <form action="https://formsubmit.co/contatophss11@gmail.com" method="POST" class="form text-center mb-4">
-              <label for="name">Nome</label>
-              <input type="text" name="name" id="name" placeholder="Digite seu nome 🧐" required />
-              <label for="email">E-mail</label>
-              <input type="email" name="email" id="email" placeholder="Digite seu E-mail 📧" required />
-              <label for="message">Mensagem</label>
-              <textarea name="message" id="message" placeholder="Digite sua Mensagem 😁 " required></textarea>
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="####" />
-              <button type="submit" class="btn btn-outline-custom text-light mt-3 submit">Enviar</button>
-            </form>
-          </div>
-  
-          <div class="col-12 col-lg-6 text-center shadow">
-            <h3>Contato</h3>
-            <p>
-              <button class="btn btn-lg contato"><a href="">Linkedin</a></button>
-            </p>
-            <p>
-              <button class="btn btn-lg contato"><a href="">GitHub</a></button>
-            </p>
-            <p>
-              <button class="btn btn-lg contato"><a href="">Email</a></button>
-            </p>
-            <p>
-              <button class="btn btn-lg contato"><a href="">WhatsApp</a></button>
-            </p>
-          </div>
-        </div>    
+        <div class="d-flex flex-column midias">
+          <a class="link-contato" href="https://www.linkedin.com/in/pedrohenriquedev/"><span>/** Linkedin **/</span></a>
+          <a class="link-contato" href="https://github.com/PedroSS11"><span>/** GitHub **/</span></a>
+          <a class="link-contato" href="mailto:contatophss11@gmail.com? subject=Olá Pedro! Vamos Trabalhar Juntos!"><span>/** Email **/</span></a>
+          <a class="link-contato" href="https://web.whatsapp.com/send?phone=5511950724702"><span>/** WhatsApp **/</span></a>
+        </div>
+
       </div>
+        
     </div>
 
   </section>
  
+  <footer class="container-fluid text-center p-2 p-lg-5">
+    <div class="row">
+      <div class="col-12">
+        <p>
+          &copy; copyright. Pedro Henrique 2022
+        </p>
+      </div>
+    </div>
+  </footer>
     
 
 
